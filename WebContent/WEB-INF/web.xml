@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>sw_30411</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <filter-name>Filter</filter-name>
+    <filter-class>kr.hs.sdh.filter.Filter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>StudentListCtrl</servlet-name>
+    <servlet-class>kr.hs.sdh.student.view.StudentListCtrl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentListCtrl</servlet-name>
+    <url-pattern>/StudentListCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddGradeCtrl</servlet-name>
+    <servlet-class>kr.hs.sdh.grade.view.AddGradeCtrl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddGradeCtrl</servlet-name>
+    <url-pattern>/AddGradeCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>GradeList</servlet-name>
+    <servlet-class>kr.hs.sdh.grade.view.GradeList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GradeList</servlet-name>
+    <url-pattern>/GradeList</url-pattern>
+  </servlet-mapping>
+</web-app>
